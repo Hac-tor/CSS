@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			h1,a { border:1px solid red; }
+			#changeh1 { display:inline;  }
+			#changea { display:block; }
+			div { 
+				padding:20px;
+				margin:20px;
+				width:200px;
+				height:50px;
+			}
+			#box1 { border:1px solid blue; }
+			#box2 { border:20px solid blue; }
+			#box3 { border:1px solid blue; box-sizing:border-box;}
+			#box4 { border:20px solid blue; box-sizing:border-box;}
+		</style>
+	</head>
+	<body>
+		<h1 class='origin'>h1</h1>
+		is block level element
+		<a href="#" class='origin'>a</a>
+		is inline element
+		<h2>So Interchange!!</h2>
+		<h1 id='changeh1'>h1</h1>
+		become inline element
+		<a href='#' id='changea'>a</a>
+		become block level element
+		<div id='box1'>same width</div>
+		<div id='box2'>same width</div>
+		<div id='box3'>true same width</div>
+		<div id='box4'>true same width</div>
+	</body>
+</html>
