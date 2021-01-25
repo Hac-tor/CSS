@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			body { background-color:black; }
+			li { color:red; }
+			.rank3 { color:orange; }
+			#rank2 { color:yellow; }
+			.rank0 { color:orange !important; }
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>tag is rank4</li>
+			<li class='rank3'>class is rank3</li>
+			<li class='rank3' id='rank2'>id is rank2</li>
+			<li class='rank3' id='rank2' style='color:green'>inline style is rank1</li>
+			<li class='rank0' id='rank2' style='color:green'>!important is king</li>
+		</ul>
+	</body>
+</html>
