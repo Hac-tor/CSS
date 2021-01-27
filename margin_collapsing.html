@@ -1,0 +1,55 @@
+<!DOCYTPE HTML>
+<html>
+	<head>
+		<style>
+			h1 { border:1px solid red; display:inline; }
+			#toptag { margin-bottom:40px; }
+			#bottomtag { margin-top:30px; }
+			#showparent { border:1px dotted blue; margin-top:50px; }
+			#noshow { margin-top:50px; }
+			.showchild { border:1px solid blue; margin-top:10px; }
+			#showline { border:1px solid skyblue; margin-top:20px; margin-bottom:50px; }
+			#noshowline { margin-top:20px; margin-bottom:50px; }
+			.nomal { border:1px solid purple; margin-top:40px; }
+			
+		</style>
+	</head>
+	<body>
+		<h1>
+			Case 1.
+		</h1>
+		<h3 id='toptag'>
+			toptag margin 40px, bottomtag margin 30px
+		</h3>
+		<h3 id='bottomtag'>
+			but, gap between h1 is 40px, not 70px
+		</h3>
+		<h1>
+			Case 2.
+		</h1>
+		<div id='showparent'>
+			parent show
+			<div class='showchild'>
+				child
+			</div>
+		</div>
+		<div id='noshow'>
+			<div class='showchild'>
+				child, no show parent But show gap
+			</div>
+		</div>
+		<h1>
+			Case 3.
+		</h1>
+		<div id='showline'>
+		</div>
+		<div class='noaml'>
+			above element affect gap
+		</div>
+		<div id='noshowline'>
+		</div>
+		<div class='nomal'>
+			no show element But. affect gap
+		</div>
+	</body>
+</html>
