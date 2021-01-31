@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			#parent { display:flex; flex-direction:column; height:500px;}
+			.child { border:3px solid #33ff33; flex-grow:1; }
+			.child:nth-child(2) { flex-grow:3; display:flex; flex-direction:row; }
+			.son { border:5px solid #3333ff; flex-basis:500px; }
+			.son:nth-child(1) { flex-shrink:3; }
+			.son:nth-child(2) { flex-shrink:2; }
+			.son:nth-child(3) { flex-shrink:1; }
+		</style>
+	</head>
+	<body>
+		<div id='parent'>
+			<div class='child'>
+				1/5 So 100px
+			</div>
+			<div class='child'>
+				<div class='son'>
+					3/5 So 300px
+				</div>
+				<div class='son'>
+					this shape is Holy Grail Layout
+				</div>
+				<div class='son'>
+					blue box size is same
+					but, When shrinking box size is different
+				</div>
+			</div>
+			<div class='child'>
+				1/5 So 100px	
+			</div>
+		</div>	
+	</body>
+</html>
