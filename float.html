@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			.container{
+				width:805px;
+				border:1px solid black;
+				margin:auto;
+			}
+			.header{
+				border-bottom:1px solid black;
+			}
+			.nav{
+				width:200px;
+				border-right:1px solid black;
+				float: left;
+			}
+			.article{
+				width:400px;
+				border-right:1px solid black;
+				border-left:1px solid black;
+				float: left;
+				margin-left:-1px;
+			}
+			.aside{
+				float:left;
+				width:200px;
+				border-left:1px solid black;
+				margin-left:-1px;
+			}
+			.footer{
+				border-top:1px solid black;
+				clear:left;
+			}
+			.article img{
+				width:200px;
+				display: block; 
+				margin: auto; 
+				float:right;
+				margin-left:10px;
+			}
+			#maintext3{
+				clear:right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<h1>
+					header
+				</h1>
+			</div>
+			<div class='nav'>
+				<h1>
+					nav
+				</h1>
+			</div>
+			<div class='article'>
+				<h1>
+					article
+				</h1>
+				<img src='img/holygrail.jpg'>
+				<p>
+					this holly grail layout is maded by float.
+				</p>
+				<p>
+					When the size decreases, float layout is fixed.
+				</p>
+				<p id='maintext3'>
+					But. flex layout transform size.
+				</p>
+			</div>
+			<div class='aside'>
+				<h1>
+					aside
+				</h1>
+			</div>
+			<div class='footer'>
+				<h1>
+					footer
+				</h1>
+			</div>
+		</div>
+	</body>
+</html>
