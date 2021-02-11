@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			div { 
+				border:1px solid black;
+				margin-bottom:10px;
+				height:180px;
+			}
+			#background1{
+				background-color:skyblue;
+				background-image:url('img/compass.png');
+				background-repeat:no-repeat;
+				background-position:center top;
+			}
+			#background2{
+				background-color:skyblue;
+				background-image:url('img/compass.png');
+				background-repeat:repeat-x;
+				background-attachment:fixed;
+			}
+			#filter{
+				background-image:url('img/aurora.jpg');
+				background-size:100% 100%;
+				filter:grayscale(80%);
+			}
+			#blend-background{
+				background-image:url('img/aurora.jpg');
+				background-size:100% 100%;
+				background-color:purple;
+				background-blend-mode:darken;
+			}
+			#blend-element{
+				background-image:url('img/aurora.jpg');
+				background-size:100% 100%;
+			}
+			#blend-element h1{
+				color:yellow;
+				mix-blend-mode:overlay;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='background1'>
+			<h1>
+				special thing is repeat:no-repeat;<br>position:center top;
+			</h1>
+		</div>
+		<div id='background2'>
+			<h1>
+				special thing is attachment:fixed;
+			</h1>
+		</div>
+		<div id='filter'>
+            <h1>
+                apply filter
+            </h1>
+		</div>
+		<div id='blend-background'>
+			<h1>
+				background-blend-mode is background + background image
+			</h1>
+		</div>
+		<div id='blend-element'>
+			<h1>
+				mix-blend-mode is background + element
+			</h1>
+		</div>
+	</body>
+</html>
